@@ -1,0 +1,145 @@
+:root{
+    --bg-primary:rgb(253, 246, 148);
+    --bg-secondary:rgb(198, 255, 160);
+    --bg-cake-orange:rgb(255, 195, 138);
+    --bg-cake-blue:rgb(128, 113, 255);
+    --bg-cake-papaya:rgb(255, 216, 131);
+    --bg-error:rgb(255, 89, 89);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    position: relative;
+}
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(75, 75, 75, 0.473);
+    visibility: hidden;
+}
+.loader-small{
+    top:35%;
+    left:40%;
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    border-top: 1.2rem solid red;
+    border-radius: 50%;
+    animation: loading 1s linear infinite;
+}
+
+.loader-big{
+    top:35%;
+    left:39%;
+    position: absolute;
+    width: 23rem;
+    height: 23rem;
+    border-top: 1.2rem solid red;
+    border-radius: 50%;
+    animation: loading-reverse 1s linear infinite;
+}
+.loader-text{
+    top:48%;
+    left:43%;
+    position: absolute;
+    font-size: 2.4rem;
+
+}
+@keyframes loading {
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes loading-reverse {
+    0%{
+        transform: rotateZ(360deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.container{
+    display: grid;
+    grid-template-rows: auto 80vh 10vh;
+    background: var(--bg-primary);
+}
+
+header{
+    background: var(--bg-secondary);
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+}
+
+section{
+    padding:1.2rem;
+    background: var(--bg-cake-orange);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+form{
+    background: var(--bg-cake-blue);
+    padding: 2.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+    display: grid;
+    border-radius: 1.6rem;
+    box-shadow: 0 0 0.8rem rgb(66, 66, 66);
+}
+.inputValue,.outputValue{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 50% 30%;
+}
+
+
+img{
+    margin-left: 3.2rem;
+}
+button{
+    margin-top: 2.4rem;
+    width: 100%;
+    border-radius: 1.2rem;
+    border: none;
+    background: var(--bg-cake-papaya);
+    grid-column: 1/3;
+}
+input{
+    padding: 1.2rem;
+    font-size: 1.6rem;
+}
+footer{
+    padding: 2.4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+#OutputDiscount:disabled{
+    background: rgb(207, 207, 207);
+    color: black;
+}
+@media(max-width:600px){
+    img{
+        display: none;
+    }
+
+    section{
+        grid-template-columns: 100%;
+    }
+}
+

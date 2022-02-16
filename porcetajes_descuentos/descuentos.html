@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Porcentajes y Descuentos | Curso Práctico de JavaScript</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="loader-big"></div>
+        <div class="loader-small"></div>
+        <div class="loader-text">
+            Procesando...
+        </div>
+    </div>
+    <div class="container">
+<header>
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del Curso Práctico de JavaScript</p>
+    </header>
+    <section>
+        
+        <form>
+            <h2>Calcula el precio a pagar de tus productos con descuento</h2>
+            <div class="inputValue">
+                <label for="precio">Escribe el precio de tu producto</label>
+                <input type="number" name="precio" id="InputPrice">
+            </div>
+            <div class="inputValue">
+                <label for="descuento">Escribe el descuento a aplicar</label>
+                <input type="number" name="descuento" id="InputDiscount">
+            </div>
+            <div class="inputValue">
+                <label for="coupon">Escribe el cupon de descuento: </label>
+                <input type="text" name="coupon" id="InputCoupon">
+                <p id="couponError"></p>
+            </div>
+            <div class="outputValue">
+                <label for="precioFinal">El precio con descuento es: </label>
+                <input type="text" name="precioFinal" id="OutputDiscount" disabled>
+            </div>
+            <div class="inputValue">
+                <button type="button" onclick="onClickButtonPriceDiscount();">Calcular Descuento</button>
+            </div>
+            
+        </form>
+        <img src="bolsa.svg" alt="bags_image">
+    </section>
+    <footer>
+        Creado por <b> <a href="www.linkedin.com/in/danny-pacheco-dev">Danny Pacheco</a></b> en el curso práctico de JavaScript
+    </footer>
+    </div>
+    
+    
+    <script src="descuentos.js"></script>
+</body>
+</html>

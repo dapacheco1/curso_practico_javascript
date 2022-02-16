@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geometric Figures | Platzi JavaScript Practice Course</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>
+                <img class="logo-img" src="img/LogoCalculator.svg" alt="SCT_logo">
+                Geometric Figures SCT
+            </h1>
+            <p>First Practice Lab in JavaScript</p>
+        </header>
+        <section class="formCalculus">
+                <section id="squareCalculus" class="figure bg-1">
+                    <h2>Calculate area and perimeter for square</h2>
+                    <label for="square">Type square measure side: </label>
+                    <div class="selection">
+                        <input type="number" name="square" min="0" step="0.01" id="square" class="input">
+                        <select name="measureS" id="measureS" class="options">
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="km">km</option>
+                        </select>
+                    </div>
+                    
+                    <p id="responseSquarePerimeter"></p>
+                    <p id="responseSquareArea"></p>
+                    <button type="button" onclick="calculateSquarePerimeter();">Calculate Perimeter</button>
+                    <button type="button" onclick="calculateSquareArea();">Calculate Area</button>
+                </section>
+    
+                <section id="triangleCalculus" class="figure bg-2">
+                    <label for="triangleSide1">Type a triangle measure side: </label>
+                    <div class="selection">
+                        <input type="number" name="triangleSide1" min="0" step="0.01" id="triangleSide1" class="input">
+                        <select name="measureT" id="measureT" class="options">
+                            <option value="cm">cm</option>
+                            <option value="m">m</option>
+                            <option value="km">km</option>
+                        </select>
+                    </div>
+                    
+                    <label for="triangleSide2">Type a triangle measure side: </label>
+                    <input type="number" name="triangleSide2" min="0" step="0.01" id="triangleSide2">
+                    <label for="triangleBase">Type a triangle measure base: </label>
+                    <input type="number" name="triangleBase" min="0" step="0.01" id="triangleBase">
+                    <label for="triangleHeight">Type a triangle measure height: </label>
+                    <input type="number" name="triangleHeight" min="0" step="0.01" id="triangleHeight">
+                    <select name="measureT" id="measureT">
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                    </select>
+                    <p id="responseTrianglePerimeter"></p>
+                    <p id="responseTriangleArea"></p>
+                    <button type="button" onclick="calculateTrianglePerimeter();">Calculate Perimeter</button>
+                    <button type="button" onclick="calculateTriangleArea();">Calculate Area</button>
+                </section>
+    
+                <section id="circleCalculus" class="figure bg-3">
+                    <label for="radius">Type radius measure: </label>
+                    <input type="number" name="radius" min="0" step="0.01" id="radiusCircle">
+                    <select name="measureC" id="measureC">
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="km">km</option>
+                    </select>
+                    <p id="responseCirclePerimeter"></p>
+                    <p id="responseCircleArea"></p>
+                    <button type="button" onclick="calculateCirclePerimeter();">Calculate Perimeter</button>
+                    <button type="button" onclick="calculateCircleArea();">Calculate Area</button>
+                </section>
+                
+        </section>
+    </div>
+    
+
+    <script src="./figures.js"></script>
+</body>
+</html>
