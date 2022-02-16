@@ -1,7 +1,5 @@
 # curso_practico_javascript
-
-...
-
+Hola, Soy Danny Pacheco. En este repositorio encontrarás ejercicios básicos de JavaScript con manejo del DOM, disfruta este recurso. 
 ## Taller #1: figuras geométricas
 
 - Primer Paso: Definir las fórmulas
